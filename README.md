@@ -49,7 +49,7 @@ All command-line arguments are optional. By default a production build will be c
 | `verbose`       | Dumps additional output to the console (default is **false**)                                                                                                | `--verbose`                      |
 | `reset-cache`   | Removes cached react-native files (default is **false**)                                                                                                     | `--reset-cache`                  |
 | `--expo`   | Set this to true/ false based on whether using expo or not. For eg, set `--expo true` when using expo. Not required to pass this for react-native cli. (default is **false**)                                                                                                     | `--expo false`                  |
-
+| `--config` | Location of the metro.config.js to use | `--config metro-modified.config.js`
 [smeo]: https://github.com/danvk/source-map-explorer#options
 
 >Use [react-native-bundle-visualizer@2](https://github.com/IjzerenHein/react-native-bundle-visualizer/tree/v2) when targetting Expo SDK 40 or lower.

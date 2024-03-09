@@ -69,6 +69,7 @@ const bundleOutputSourceMap = bundleOutput + '.map';
 const format = argv.format || 'html';
 const bundleOutputExplorerFile = path.join(outDir, 'explorer.' + format);
 const onlyMapped = !!argv['only-mapped'] || false;
+const config = argv.config
 
 // Make sure the temp dir exists
 fs.ensureDirSync(baseDir);
@@ -101,6 +102,10 @@ const commands = [
 if (resetCache) {
   commands.push('--reset-cache');
   commands.push(resetCache);
+}
+if(config){
+  commands.push('--config');
+  commands.push(config)
 }
 
 const reactNativeBin = getReactNativeBin();
