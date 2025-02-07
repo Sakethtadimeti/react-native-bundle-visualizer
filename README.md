@@ -8,6 +8,7 @@ Uses the awesome [source-map-explorer](https://github.com/danvk/source-map-explo
 
 ## Purpose
 
+
 Sometimes, importing a single javascript library can drastically increase your bundle size. This package helps you to identify such a library, so you can keep the bundle size low and loading times fast.
 
 ## Usage
